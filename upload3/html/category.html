@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   
+    <script src="../js/blogs.js"></script>
+    <script src="../js/category.js"></script>
+   
+
+    <style>
+      .cardData{
+        height: 350px;
+      }
+      #postArea{
+        overflow: scroll; 
+       
+      }
+      .cardPostData{
+        box-shadow: 0 0 5px 8px rgba(71, 23, 61, 0.1);
+      }
+
+      .card-text{
+        color: rgb(56, 54, 54);
+      }
+      .card-title{
+        color: black;
+        font-weight:bold;
+      }
+      .read{
+          columns: #0c7f90;
+          font-size: 15px;
+          margin-top: auto;
+          font-weight: 600;
+      }
+      a:hover{
+       color: maroon;
+       font-weight: 500;
+       font-size: large;
+            }
+
+    </style>
+</head>
+<body>
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            
+            <div class="col-lg-8">
+              <div class="holder">
+              </div>
+                <div class="row" id="postArea"> </div>
+              <div class="holder">
+              </div>
+            </div>
+    
+          <!-- Sidebar Widgets Column -->
+          <div class="col-md-4">
+    
+            <!-- Search Widget -->
+            <div class="card my-4">
+              <h5 class="card-header">Search</h5>
+              <div class="card-body">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="category" placeholder="Search for...">
+                  <span class="input-group-append">
+                    <button class="btn btn-secondary" type="button" id="Go">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Categories Widget -->
+            <div class="card my-4" id="category-link">
+              <h5 class="card-header">Categories</h5>
+              <div class="card-body">
+                <!-- Side Widget -->
+             
+                <!-- Links -->
+                <nav class="navbar bg-light navbar  " >
+                  <ul class="navbar-nav ">
+                    <li class="nav-item">
+                      <a class="nav-link link-search"  
+                      href="#" id="nature" value="Nature">Nature</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-search" 
+                      href="#" id="technology" value="technology">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-search " href="#" id="motivation" value="motivation">Motivation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-search" href="#" id="travel" value="travel">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-search" href="#" id="life" value="life">Life</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-search" href="#" id="Sports" value="Sports">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-search" href="#" id="happiness" value="happiness">Happiness</a>
+                    </li>
+                  </ul>
+                </nav>
+            
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    
+      </div>
+      <!-- /.container -->
+</body>
+</html>

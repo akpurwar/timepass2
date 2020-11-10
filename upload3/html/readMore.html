@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../libraries/jquery-3.5.1.min.js"></script>
+    <script src="../js/readMore.js"></script>
+    <link rel="stylesheet" href="../libraries/nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/9e9ab7d660.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Read More</title>
+    <style>
+        .read-more-card{
+          width: 800px;
+          margin-left: 300px;
+          margin-top: 80px;
+          border-radius: 10px;
+          padding: 30px;
+        }
+        .read-more-title{
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color: blueviolet;
+        
+          text-align: center;
+          text-transform: uppercase;
+        }
+        label{
+          color: blue;
+          font-weight: bold;
+        }
+        .read-more-data{
+          border-radius: 10%;
+          background-color: rgb(194, 229, 245);
+        }
+        .blogCard{
+          background-color: rgb(209, 202, 209);
+        }
+      </style>
+</head>
+<body class="container read-more-data">
+    <div class="header"></div>
+    <em class="fa fa-chevron-circle-left" style="color:green;font-size: 30px;text-align:left;" id="back"></em>
+    <div id="show">
+      
+      
+    </div>
+    <div id="cmtSection">
+      
+        <span id="likeCount" color="blue" ><em class="fa fa-thumbs-up" style="font-size:30px;" id="like"></em></span>
+        <em class="fa fa-thumbs-down" style="font-size:30px;color:red;" id="unlike"></em>
+
+        <input type="text" id="comment" placeholder="Write comment here...">
+        <button class="btn btn-info" id="post">Comment</button>
+    </div>
+    <div id="commentSection">
+        <!--Comments-->
+    </div>
+    
+</body>
+</html>

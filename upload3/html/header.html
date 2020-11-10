@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <script src="../js/signUp.js"></script>
+    <script src="../js/editor.js"></script>
+    <script src="../js/login.js"></script>
+    
+    <style>
+        img{
+            width: 130px;
+            height: 55px;
+        }
+        #editorClass{
+          width: 70%;
+          margin:auto;
+        }
+        #heading{
+          color: chocolate;
+        }
+        h2{
+          color:blanchedalmond;
+        }
+        .carousel-inner img {
+    width: 100%;
+    height: 300px;
+  }
+    </style>
+    <script src="../js/header.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top header">
+        <div class="container ">
+          <a class="navbar-brand" href="#">
+                <img src="../assets/logo.png" alt="">
+              </a>
+              <h2>Hub Of Worlds</h2>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#" id="home"><span class="fas fa-home"></span>Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="about" href="#"><span class="fas fa-info-circle"></span>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="services" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact" href="#"><span class="fas fa-phone"></span>Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-target="#myModalSignUp" data-toggle="modal" id="signup"><span class="fas fa-user"></span> Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link login" data-target="#myModal" data-toggle="modal" id="login"><span class="fas fa-sign-in-alt"></span> Login</a>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-target="#myModalEditor" data-toggle="modal" id="editor" >Write Post</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Carousal End-->
+      <div id="blogC" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#blogC" data-slide-to="0" class="active"></li>
+          <li data-target="#blogC" data-slide-to="1"></li>
+          <li data-target="#blogC" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/header/motivation.jpeg" alt="Los Angeles">
+            <div class="carousel-caption">
+              <h3>Beauty In Nature</h3>
+              <p>We are inspire by nature...</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/header/nature.jpeg" alt="Chicago">
+            <div class="carousel-caption">
+              <h3>Motivation</h3>
+              <p>Never give up!! Nothing is impossible...</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/header/technology.jpeg" alt="New York">
+            <div class="carousel-caption">
+              <h3>Technology</h3>
+              <p>Make a life easy using new technology</p>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#blogC" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#blogC" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+<!--Carousal End-->      
+
+      <div class="container">
+        <!-- <button class="btn btn-success" data-target="#myModal" data-toggle="modal">Open signup</button> -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 id="heading">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email </label>
+                        <div class="col-sm-7">
+                          <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label" >Password </label>
+                      <div class="col-sm-7">
+                        <input type="password" class="form-control" id="password" placeholder="password" required>
+                      </div>
+                    </div>
+                    
+                  </form>
+                </div>
+                <form>
+                  <div class="modal-footer justify-content-center">
+                    <input type="submit" class="btn btn-success login" data-dismiss="modal" value="login">
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="modal" id="myModalSignUp">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 id="heading">Register</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-3 col-form-label">First Name </label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="fName" placeholder="Firstname" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-3 col-form-label">Last Name </label>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="lName"placeholder="Lastname" required>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-3 col-form-label">Email </label>
+                        <div class="col-sm-7">
+                          <input type="email" class="form-control" id="sEmail" placeholder="Email" required>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-3 col-form-label">Password </label>
+                      <div class="col-sm-7">
+                        <input type="password" class="form-control" id="sPassword" placeholder="Password" required>
+                      </div>
+                    </div>
+                  </form>  
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button class="btn btn-success " data-dismiss="modal" id="signUp">Sign Up</button>
+
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container editorClass">
+        <div class="modal" id="myModalEditor">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 id="heading">Create Post Here</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="title">Title:</label>
+                    <div class="col-sm-3">
+                      <input
+                        type="text"
+                       class="form-control"
+                       style="width:400px"
+                        id="title"
+                        placeholder="Enter Blog Title"
+                        name="title"
+                        size=20
+                      />
+                    </div>
+                  </div>
+              
+                  <div id="container">
+                    <fieldset>
+                      <button
+                        class="fontStyle italic"
+                        onclick="document.execCommand('italic',false,null);"
+                        title="Italicize Highlighted Text"
+                      ></button>
+                      <button
+                        class="fontStyle bold"
+                        onclick="document.execCommand( 'bold',false,null);"
+                        title="Bold Highlighted Text"
+                      ></button>
+                      <button
+                        class="fontStyle underline"
+                        onclick="document.execCommand( 'underline',false,null);"
+                      ></button>
+                      <select id="input-font" class="input" onchange="changeFont (this);">
+                        <option value="Arial">Arial</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Sans serif">Sans serif</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Palatino">Palatino</option>
+                        <option value="Garamond">Garamond</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Arial Black">Arial Black</option>
+                        <option value="Tahoma">Tahoma</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                      </select>
+                      <button
+                        class="fontStyle strikethrough"
+                        onclick="document.execCommand( 'strikethrough',false,null);"
+                      >
+                        <strikethrough></strikethrough>
+                      </button>
+                      <button
+                        class="fontStyle align-left"
+                        onclick="document.execCommand( 'justifyLeft',false,null);"
+                      >
+                        <justifyLeft></justifyLeft>
+                      </button>
+                      <button
+                        class="fontStyle align-center"
+                        onclick="document.execCommand( 'justifyCenter',false,null);"
+                      >
+                        <justifyCenter></justifyCenter>
+                      </button>
+                      <button
+                        class="fontStyle align-right"
+                        onclick="document.execCommand( 'justifyRight',false,null);"
+                      >
+                        <justifyRight></justifyRight>
+                      </button>
+                      <button
+                        class="fontStyle redo-apply"
+                        onclick="document.execCommand( 'redo',false,null);"
+                      >
+                        <redo></redo>
+                      </button>
+                      <button
+                        class="fontStyle undo-apply"
+                        onclick="document.execCommand( 'undo',false,null);"
+                      >
+                        <undo></undo>
+                      </button>
+                      <button
+                        class="fontStyle orderedlist"
+                        onclick="document.execCommand('insertOrderedList', false, null);"
+                      >
+                        <insertOrderedList></insertOrderedList>
+                      </button>
+                      <button
+                        class="fontStyle unorderedlist"
+                        onclick="document.execCommand('insertUnorderedList',false, null)"
+                      >
+                        <insertUnorderedList></insertUnorderedList>
+                      </button>
+                      <input
+                        class="color-apply"
+                        type="color"
+                        onchange="chooseColor()"
+                        id="myColor"
+                      />
+              
+                      <!-- font size start -->
+                      <select id="fontSize" onclick="changeSize()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                      </select>
+                      <!-- font size end -->
+                    </fieldset>
+              
+                    <div class="data">
+                      Category<select id="categories" style="width: 180px;" name="category">
+                        <!-- Dropdown List Option -->
+                      </select>
+              
+                      
+                    </div>
+                    Blog content :<br>
+                    <div
+                      id="editor1"
+                      contenteditable="true"
+                      data-text="Enter comment...."
+                    ></div>
+                  </div>
+              
+
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button class="btn btn-success " data-dismiss="modal" id="post" onclick="myfunction()">Post</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+</body>
+</html>
+
+</body>
+</html>
